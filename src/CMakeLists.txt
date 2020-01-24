@@ -1,4 +1,4 @@
-set(TARGET_NAME driver_extratracker)
+set(TARGET_NAME driver_sample)
 
 add_library(${TARGET_NAME} SHARED
   driverlog.cpp
