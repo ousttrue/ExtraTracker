@@ -8,6 +8,7 @@ add_library(${TARGET_NAME} SHARED
   device.cpp
   controller.cpp
   server.cpp
+  display.cpp
   )
 
 target_compile_definitions(${TARGET_NAME} PRIVATE
