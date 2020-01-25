@@ -5,15 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "SteamVR",
+            "name": "(Windows) 接続",
             "type": "cppvsdbg",
-            "request": "launch",
-            "program": "C:/Steam/steamapps/common/SteamVR/bin/win64/vrmonitor.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false
+            "request": "attach",
+            "processId": "${command:pickProcess}"
         }
     ]
 }
