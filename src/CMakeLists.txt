@@ -5,8 +5,9 @@ add_library(${TARGET_NAME} SHARED
   driverlog.h
   driver_sample.cpp
   watchdog.cpp
-  trackeddevice.cpp
+  device.cpp
   controller.cpp
+  server.cpp
   )
 
 target_compile_definitions(${TARGET_NAME} PRIVATE

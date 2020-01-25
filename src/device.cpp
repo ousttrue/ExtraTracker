@@ -1,4 +1,4 @@
-#include "trackeddevice.h"
+#include "device.h"
 #include "helper.h"
 
 // keys for use with the settings API
