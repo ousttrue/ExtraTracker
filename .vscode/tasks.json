@@ -1,0 +1,36 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "openvr show",
+            "type": "shell",
+            "command": "${env:STEAM_DIR}/steamapps/common/SteamVR/bin/win64/vrpathreg.exe",
+            "args": [
+                "show",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "openvr adddriver",
+            "type": "shell",
+            "command": "${env:STEAM_DIR}/steamapps/common/SteamVR/bin/win64/vrpathreg.exe",
+            "args": [
+                "adddriver",
+                "${workspaceFolder}\\sample"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "openvr removedriver",
+            "type": "shell",
+            "command": "${env:STEAM_DIR}/steamapps/common/SteamVR/bin/win64/vrpathreg.exe",
+            "args": [
+                "removedriver",
+                "${workspaceFolder}\\sample"
+            ],
+            "problemMatcher": []
+        },
+    ]
+}
